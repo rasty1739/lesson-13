@@ -20,6 +20,12 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .container {
+    max-width: 400px;
+  }
+}
+
 .button {
   border-radius: 10px;
   background-color: #ffd200;
