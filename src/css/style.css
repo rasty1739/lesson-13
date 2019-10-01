@@ -37,6 +37,12 @@ body {
 }
 
 @media (max-width: 576px) {
+  .container {
+    width: 380px;
+  }
+}
+
+@media (max-width: 400px) {
   .navbar {
     background-color: #fff;
   }
