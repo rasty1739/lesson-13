@@ -1,0 +1,138 @@
+.offer
+  background: url('../img/offer/offer-bg.png') no-repeat
+  background-size: contain
+  background-position: center right
+  position: relative
+  padding-top: 59px
+  &::before
+    content: ''
+    width: 50%
+    height: 100%
+    position: absolute
+    background-color: #ffffff
+    top: 0
+    left: 0
+
+  &-block
+    width: 50%
+    padding-right: 90px
+    position: relative
+  &__title
+    max-width: 360px
+    line-height: 35px
+    margin-bottom: 20px
+    text-align: left
+  &__subtitle
+    font-size: 16px
+    +reg
+    max-width: 250px
+    margin-bottom: 30px
+  &__input
+    margin-bottom: 30px
+    width: 240px
+    &:first-child
+      margin-right: 10px
+  &__button
+    width: 100%
+    min-height: 70px
+    font-size: 16px
+  &__contacts
+    display: flex
+    justify-content: space-between
+    margin-top: 25px
+  &__message
+    font-size: 15px
+    span
+      display: inline-block
+      padding-top: 5px
+  &__tel
+    padding-left: 67px
+    padding-top: 0
+  &__text
+    font-size: 15px
+  &__phone
+    font-size: 15px
+    padding-top: 5px
+    +md
+
+@media (max-width: 1200px)
+  .offer
+    background-size: cover
+    &__input
+      width: 100%
+      margin-bottom: 10px
+    &__button
+      font-size: 13px
+@media (max-width: 992px)
+  .offer
+    &__button
+      font-size: 11px
+    &__contacts
+      flex-direction: column
+      font-size: 15px
+      margin: 0
+      margin-top: 18px
+      padding-left: 5px
+      padding-bottom: 30px
+    &__message
+      line-height: 1.3
+    &__tel
+      padding: 0
+      margin: 0
+      padding-top: 12px
+    &__text
+      display: block
+      padding-bottom: 5px
+@media (max-width: 768px)
+  .offer
+    background: #fff
+    &-block
+      width: 100%
+      padding-right: 0
+
+@media (max-width: 400px)
+  .offer
+    padding-top: 34px
+    padding-bottom: 25px
+    .container
+      width: 276px
+    &__title
+      font-size: 18px
+      line-height: 1.2
+    &__subtitle
+      font-size: 14px
+      margin-bottom: 26px
+    &__input
+      padding: 23px 22px
+      margin-bottom: 7.5px
+    &__button
+      font-size: 14px
+      line-height: 1.3
+      border-radius: 10px
+      margin-top: 6px
+      padding-top: 14px
+      margin-bottom: 5px
+      span
+        display: block
+    &__contacts
+      flex-direction: column
+      font-size: 15px
+      margin: 0
+      margin-top: 18px
+      padding-left: 5px
+      padding-bottom: 30px
+    &__message
+      line-height: 1.3
+    &__tel
+      padding: 0
+      margin: 0
+      padding-top: 12px
+    &__text
+      display: block
+      padding-bottom: 5px 
+    &__phone
+      padding-top: 4px
+
+
+
+
