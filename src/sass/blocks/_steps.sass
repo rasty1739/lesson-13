@@ -1,0 +1,180 @@
+.steps
+  padding-top: 28px
+  padding-bottom: 94px
+  color: $section-color
+  &__title
+    margin: auto
+    margin-bottom: 50px
+    max-width: 680px
+    font-size: 30px
+    margin-top: 5.5px
+    line-height: 45px
+  &__subtitle
+    margin-bottom: 68px
+    text-align: center
+    font-size: 20px
+    +reg
+  &-block
+    display: flex
+    justify-content: space-around
+  &__item
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 151px
+    position: relative
+    &::before
+      content: url('../img/steps/step-arrow.png')
+      position: absolute
+      top: -11px
+      right: -78px
+  &__item
+    &:last-child
+      &::before
+        content: ''
+
+  &__img
+    border: 3px solid $main-color
+    border-radius: 50%
+    width: 100px
+    height: 100px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 27px
+  &__text
+    text-align: center
+    font-size: 14px
+    +reg
+    line-height: 20px
+  &__footer
+    background-image: url('../img/steps/step-bg.png')
+    background-size: 100%
+    padding: 87px 0
+    padding-bottom: 93px
+    margin-bottom: 10px
+    &-title
+      margin: 0 auto
+      margin-left: -5px
+      text-align: center
+      font-size: 32px
+      +reg
+      line-height: 50px
+      color: $section-color
+      span
+        display: block
+        margin-left: 5px
+
+
+@media (max-width: 1200px)
+  .container
+    width: 960px
+  .steps
+    &__item
+      &::before
+        right: -60px
+    &__footer
+      &-title
+        font-size: 28px
+        line-height: 1.5
+        max-width: 960px
+        margin: 0 auto
+@media (max-width: 992px)
+  .container
+    width: 720px
+  .steps
+    &__item
+      &::before
+        right: -36px
+        top: -20px
+    &__footer
+      &-title
+        max-width: 720px
+        font-size: 24px
+@media (max-width: 768px)
+  .container
+    width: 540px
+  .steps
+    padding-bottom: 50px
+    &-block
+      flex-direction: column
+      align-items: center
+    &__item
+      margin-bottom: 30px
+      &::before
+        content: ''
+    &__title
+      font-size: 22px
+      line-height: 30px
+      margin-bottom: 20px
+    &__subtitle
+      font-size: 18px
+      margin-bottom: 45px
+    &__footer
+      padding: 60px 0
+      &-title
+        font-size: 22px
+        line-height: 1.3
+        margin: 0 auto
+        max-width: 500px
+@media (max-width: 576px)
+  .container
+    width: 380px
+  .steps
+    &__footer
+      &-title
+        font-size: 20px
+        max-width: 400px
+@media (max-width: 400px)
+  .steps
+    padding-top: 8px
+    padding-bottom: 43px
+    .container
+      width: 240px
+    &__title
+      font-size: 18px
+      font-weight: 400
+      line-height: 21px
+      margin-bottom: 25px
+    &__subtitle
+      font-size: 14px
+      margin-left: 4px
+      margin-bottom: 33px
+    &__img
+      margin-bottom: 28px
+      margin-left: 4px
+    &__text
+      font-size: 12px
+      line-height: 16px
+      margin-bottom: 30px
+    &__item
+      margin-bottom: 0
+      &:first-child
+        .steps
+          &__img
+            margin-bottom: 19px
+      &:nth-child(3)
+        .steps
+          &__text
+            margin-bottom: 27px
+      &:nth-child(4)
+        .steps
+          &__img
+            margin-bottom: 27px
+          &__text
+            margin-bottom: 29px
+  
+    &__footer
+      padding-top: 70px
+      padding-bottom: 77px
+      margin-bottom: 53px
+      &-title
+        margin: 0 auto
+        font-size: 18px
+        line-height: 21px
+        max-width: 275px
+        padding-left: 4px
+        span
+          margin-left: 0
+          
+  

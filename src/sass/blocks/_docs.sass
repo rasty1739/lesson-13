@@ -1,0 +1,133 @@
+.docs
+  padding-top: 39px
+  margin-bottom: 137px
+  color: $section-color
+  &__title
+    margin: 0 auto
+    padding-left: 4px
+    font-size: 30px
+    font-weight: 400
+    line-height: 45px
+    max-width: 700px
+    margin-bottom: 93px
+  &-block
+    display: flex
+    justify-content: space-around
+  &__item
+    display: flex
+    flex-direction: column
+    max-width: 290px
+
+  &__text
+    font-size: 18px
+    +reg
+    line-height: 24px
+    text-align: center
+    margin-top: 32px
+  &__item
+    &:first-child
+      .docs__text
+        margin-right: 15px
+  &__item
+    &:nth-child(2)
+      .docs__img
+        margin-left: 11px
+  &__item
+    &:nth-child(3)
+      .docs__img
+        margin-left: 18px
+      .docs__text
+        margin-right: -20px
+
+
+@media (max-width: 1200px)
+  .container
+    width: 960px
+  .docs
+    &__item
+      &:first-child
+        .docs__text
+          margin: 0
+          margin-top: 25px
+    &__item
+      &:nth-child(2)
+        .docs__img
+          margin: 0
+        .docs__text
+          margin: 0
+          margin-top: 25px
+    &__item
+      &:nth-child(3)
+        .docs__img
+          margin: 0
+        .docs__text
+          margin: 0
+          margin-top: 25px
+        
+    &__img
+      max-width: 100%
+      img
+        width: 100%
+    &__title
+      font-size: 28px
+      margin-bottom: 60px
+    &__text
+      font-size: 16px
+@media (max-width: 992px)
+  .container
+    width: 720px
+  .docs
+    margin-bottom: 90px
+    &__block
+      justify-content: space-between
+    &__item
+      max-width: 220px
+      margin: 0
+    &__title
+      font-size: 26px
+      line-height: 30px
+@media (max-width: 768px)
+  .container
+    width: 540px
+  .docs
+    &__title
+      font-size: 24px
+    &-block
+      flex-direction: column
+      align-items: center
+    &__item
+      max-width: 330px
+      margin-bottom: 70px
+@media (max-width: 576px)
+  .container
+    width: 380px
+  .docs
+    padding-bottom: 70px
+    margin-bottom: 0
+    &__title
+      font-size: 22px
+      line-height: 20px
+    &__item
+      max-width: 280px
+      margin-bottom: 50px
+    &__text
+      margin-top: 20px
+@media (max-width: 400px)
+    .container
+      width: 270px
+    .docs
+      padding-bottom: 44px
+      &__title
+        font-size: 18px
+        line-height: 22px
+        margin-bottom: 48px
+      &__item
+        max-width: 270px
+        align-items: center
+        margin-bottom: 43px
+      &__text
+        margin-top: 24px
+        max-width: 230px
+        font-size: 14px
+        line-height: 17.5px
+        

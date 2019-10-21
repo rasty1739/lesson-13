@@ -6,10 +6,12 @@
   height: 100%
   background-color: rgba(#000, 0.52)
   display: none
+  overflow-y: scroll
   &_active
     display: flex
     justify-content: center
     align-items: center
+    overflow-y: scroll
   &-block
     margin: auto
     max-width: 570px
@@ -23,6 +25,8 @@
       position: absolute
       top: 0
       right: 0
+      &:hover
+        cursor: pointer
   &__container
     max-width: 370px
     margin: 80px auto
@@ -84,6 +88,17 @@
       font-size: 13px
     &__phone
       font-size: 20px
+  #modal-form
+    .input
+      &-group
+        position: relative
+
+    div.invalid
+      position: absolute
+      right: 10px
+      top: 40px
+      font-size: 12px
+      color: red
 
 @media (max-width: 768px)
   .modal
@@ -92,6 +107,17 @@
     &__container
       max-width: 260px
       margin: 40px auto
+    #modal-form
+      .input
+        &-group
+          position: relative
+
+      div.invalid
+        position: absolute
+        right: 10px
+        top: 36px
+        font-size: 12px
+        color: red
 
 @media (max-width: 576px)
   .modal
@@ -119,6 +145,17 @@
       font-size: 12px
     &__phone
       font-size: 17px
+    #modal-form
+      .input
+        &-group
+          position: relative
+
+      div.invalid
+        position: absolute
+        right: 10px
+        top: 30px
+        font-size: 12px
+        color: red
 @media (max-width: 400px)
   .modal
     &__block
@@ -145,3 +182,14 @@
       font-size: 10px
     &__phone
       font-size: 13px
+    #modal-form
+      .input
+        &-group
+          position: relative
+
+      div.invalid
+        position: absolute
+        right: 10px
+        top: 25px
+        font-size: 10px
+        color: red

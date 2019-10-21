@@ -1,0 +1,112 @@
+.footer
+  position: relative
+  color: $section-color
+.map
+  width: 50%
+  position: absolute
+  left: 0
+  top: 0
+.contacts
+  flex-basis: 50%
+  padding-top: 70px
+  padding-left: 213px
+  &__title
+    max-width: 310px
+    +md
+    font-size: 22px
+    line-height: 1.5
+    margin-bottom: 88px
+    margin-top: 21px
+    padding-left: 2px
+  &-block
+    display: flex
+    justify-content: flex-end
+  &-list
+    padding: 0
+    list-style: none
+    &__icon
+      display: block
+      margin-top: 6px
+      width: 20px
+      height: 20px
+      text-align: center
+      line-height: 20px
+      margin-right: 22px
+    &__item
+      display: flex
+      align-items: flex-start
+      margin-bottom: 30px
+      &:nth-child(2)
+        margin-bottom: 27px
+    &__item
+      &:last-child
+        .contacts-list__text
+          margin-left: 2px
+        
+    &__text
+      line-height: 26px
+      max-width: 150px
+      .bold
+        +md
+    &__phone
+      text-decoration: none
+      color: $text-color
+      +md
+
+@media (max-width: 1200px)
+  .container
+    width: 960px
+  .contacts
+    padding-left: 80px
+@media (max-width: 992px)
+  .container
+    width: 720px
+  .contacts
+    padding-left: 80px
+    &__title
+      font-size: 20px
+      width: 100%
+      margin-bottom: 50px
+@media (max-width: 768px)
+  .container
+    width: 540px
+  .footer
+    position: static
+    display: flex
+    flex-direction: column-reverse
+  .map
+    position: static
+    width: 100%
+  .contacts
+    flex-basis: 100%
+    padding: 0
+    &__title
+      max-width: 450px
+      font-size: 24px
+      line-height: 1.3
+      margin-top: 35px
+@media (max-width: 576px)
+  .container
+    width: 380px
+  .contacts
+    &__title
+      font-size: 22px
+
+@media  (max-width: 400px)
+  .container
+    width: 276px
+  .contacts
+    margin-top: 15px
+    margin-left: 2px
+    margin-bottom: 29px
+    &-block
+      justify-content: flex-start
+    &__title
+      width: 100%
+      font-size: 18px
+      line-height: 1.2
+      margin-bottom: 32px
+    &-list
+      &__icon
+        margin-right: 11px
+  
